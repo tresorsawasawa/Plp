@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/all.css">
     <title>Product_landing_Page</title>
 </head>
 
@@ -19,28 +20,53 @@
                 <nav id="nav-bar">
                     <ul>
                         <li><a href="#home" class="nav-link active">Home</a></li>
-                        <li><a href="#about" class="nav-link">About</a></li>
                         <li><a href="#how-it-works" class="nav-link">How it works</a></li>
-                        <li><a href="#how-it-works" class="nav-link">Our products</a></li>
+                        <li><a href="#our products" class="nav-link">Our products</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
     </div>
-    <section>
-        <div class="form-group">
-            <form action="email" id="form">
-                <div class="form-control">
-                    <label for=""></label>
-                    <input type="text" name="name" id="name">
+
+    <div class="container">
+        <section id="hero">
+            <div class="form-group">
+                <h2>Need any services</h2>
+                <form action="email" id="form">
+                    <div class="form-control">
+                        <label for="name">Names: </label>
+                        <input type="text" name="name" id="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email: </label>
+                        <input type="email" name="email" id="email" placeholder="Ente your email" required>
+                    </div>
+                    <input id="submit" type="submit" value="Get started" class="btn">
+                </form>
+            </div>
+        </section>
+    </div>
+    <div class="container">
+        <section id="home">
+            <div class="grid">
+                <div class="description">
+                    <h2>Strategic</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem unde quibusdam impedit dolorum vero corrupti earum pariatur dicta modi perspiciatis.
+                    </p>
                 </div>
-                <div class="form-control">
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" required>
+            </div>
+            <div class="grid">
+                <div class="icon"><i></i></div>
+                <div class="description">
+                    <h2>Logistics</h2>
+                    <p>
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci vero ea error? Voluptates, voluptate cum!
+                    </p>
                 </div>
-            </form>
-        </div>
-    </section>
+            </div>
+        </section>
+    </div>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 </body>
 
